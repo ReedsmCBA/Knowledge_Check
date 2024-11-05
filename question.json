@@ -1,8 +1,8 @@
 [
     {
-        "question" : "The International Literacy Day is observed on ?",
-        "choice1" : "Sep 8",
-        "choice2" : "Nov 28",
+        "question" : "Do i like cricket ?",
+        "choice1" : "No",
+        "choice2" : "I love it",
         "choice3" : "May 2",
         "choice4" : "Sep 22",
         "answer" : 1
