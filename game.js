@@ -13,18 +13,15 @@ let availableQuesions = [];
 
 let questions = [];
 
-fetch(
-    './question.json'
-)
-    .then((res) => {
-        return res.json();
-    })
+const loadQuestions = (./question.json) => {
+    return fetch(./question.json)
+        .then((res) => res.json())
         .then((loadedQuestions) => {
-            console.log("loaded "+loadedQuestions);
-        questions = loadedQuestions.results.map((loadedQuestion) => {
-            const formattedQuestion = {
-                question: loadedQuestion.question,
-            };
+            console.log("loaded " + loadedQuestions);
+            questions = loadedQuestions.results.map((loadedQuestion) => {
+                const formattedQuestion = {
+                    question: loadedQuestion.question,
+                };
 
             const answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
