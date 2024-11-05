@@ -19,7 +19,8 @@ fetch(
     .then((res) => {
         return res.json();
     })
-    .then((loadedQuestions) => {
+        .then((loadedQuestions) => {
+            console.log("loaded "+loadedQuestions);
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
                 question: loadedQuestion.question,
